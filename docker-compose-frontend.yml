@@ -1,0 +1,12 @@
+services:
+  frontend:
+    build: .
+    container_name: kencana_frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - kencana-net
+
+networks:
+  kencana-net:
+    driver: bridge
